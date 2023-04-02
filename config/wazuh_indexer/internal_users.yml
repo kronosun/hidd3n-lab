@@ -10,12 +10,12 @@ _meta:
 
 ## Demo users
 
-admin:
-  hash: "$2y$12$K/SpwjtB.wOHJ/Nc6GVRDuc1h0rM1DfvziFRNPtk27P.c4yDr9njO"
+ninja:
+  hash: "$2y$12$YKVmHcIDt6N0Hd6Mjz0scOy7a8jEcpw2gs4DhKS9cpOrwmsLX6Dmy"
   reserved: true
   backend_roles:
   - "admin"
-  description: "Demo admin user"
+  description: "Admin user"
 
 kibanaserver:
   hash: "$2a$12$4AcgAt3xwOWadA5s5blL6ev39OXDNhmOesEoo33eZtrq2N0YrU3H."

@@ -1,4 +1,4 @@
-bind-addr: 0.0.0.0:80
+bind-addr: 0.0.0.0:8118
 auth: password
-password: csalab
+password: hidd3n.ninja
 cert: false

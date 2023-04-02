@@ -1,16 +1,16 @@
 nodes:
   # Wazuh indexer server nodes
   indexer:
-    - name: wazuh-indexer.lab
-      ip: wazuh-indexer.lab
+    - name: indexer.hidd3n
+      ip: indexer.hidd3n
 
   # Wazuh server nodes
   # Use node_type only with more than one Wazuh manager
   server:
-    - name: wazuh-manager.lab
-      ip: wazuh-manager.lab
+    - name: manager.hidd3n
+      ip: manager.hidd3n
 
   # Wazuh dashboard node
   dashboard:
-    - name: wazuh-dashboard.lab
-      ip: wazuh-dashboard.lab
+    - name: dashboard.hidd3n
+      ip: dashboard.hidd3n
