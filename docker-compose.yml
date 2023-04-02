@@ -18,9 +18,6 @@ services:
       - ./script/kalilinux.startup.sh:/script/startup.sh
       - ./script/kalilinux.tunell.py:/script/tunell.py
     command: /bin/bash /script/startup.sh
-    networks:
-      attack:
-        ipv4_address: 10.0.0.100
 
   f15h:
     hostname: f15h
@@ -34,9 +31,6 @@ services:
       - ./script/phising.index.html:/usr/share/novnc/index.html
       - ./script/phising.startup.sh:/startup.sh
     command: /bin/bash /startup.sh
-    networks:
-      attack:
-        ipv4_address: 10.0.0.200
 
   cod3r:
     hostname: cod3r
