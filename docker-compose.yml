@@ -10,7 +10,7 @@ services:
     working_dir: /root
     environment:
       - SHELL=/bin/bash
-      - VNC_PASSWORD=attack
+      - VNC_PASSWORD=Muv0x@1234!
     volumes:
       - /dev/null:/usr/share/novnc/index.html
       - ./script/kalilinux.startup.sh:/script/startup.sh
@@ -31,16 +31,3 @@ networks:
         - subnet: 10.0.0.0/24
           gateway: 10.0.0.1
 
-volumes:
-  filebeat_etc: {}
-  filebeat_var: {}
-  wazuh_api_configuration: {}
-  wazuh_etc: {}
-  wazuh_logs: {}
-  wazuh_queue: {}
-  wazuh_var_multigroups: {}
-  wazuh_integrations: {}
-  wazuh_active_response: {}
-  wazuh_agentless: {}
-  wazuh_wodles: {}
-  wazuh-indexer-data: {}

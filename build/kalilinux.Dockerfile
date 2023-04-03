@@ -7,6 +7,7 @@ DEBIAN_FRONTEND=noninteractive apt -yq install \
   inetutils-ping \
   htop \
   nano \
+  dumb-init \
   net-tools \
   tigervnc-standalone-server \
   tigervnc-xorg-extension \
@@ -20,3 +21,6 @@ DEBIAN_FRONTEND=noninteractive apt -yq install \
 apt -y dist-upgrade && \
 apt -y autoremove && \
 apt clean all
+RUN wget -O /usr/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64
+RUN chmod +x /usr/bin/dumb-init
+ENTRYPOINT ["/usr/bin/dumb-init", "--"]
